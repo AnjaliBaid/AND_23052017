@@ -45,7 +45,12 @@ public  class Myadapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View view = inflater.inflate(R.layout.linear,parent,false);
+        //View view1 = inflater.inflate(R.layout.linear,parent,false);
+        View view = null;
+        if (convertView==null)
+            view =inflater.inflate(R.layout.linear,parent,false);
+        else view =convertView;
+
         ((ImageView)view.findViewById(R.id.img)).setImageResource(data.get(position).imgid);
         ((TextView)view.findViewById(R.id.txt)).setText(data.get(position).text);
         return view;
