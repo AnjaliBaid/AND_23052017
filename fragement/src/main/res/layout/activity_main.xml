@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="@dimen/little"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.fragement.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framesecond"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <fragment
+    android:id="@+id/firstfragement"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    class="com.example.fragement.PanelFragment"
+    />
+
+
+</LinearLayout>
