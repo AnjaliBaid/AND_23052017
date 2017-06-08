@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dialog_Notification</string>
+    <string name="String">ALERT</string>
+    <string name="dimen">20sp</string>
+    <string name="string">DATE</string>
+    <string name="strng">TIME</string>
+    <string name="progress">PROGRESS</string>
+    <string name="custom">CUSTOM</string>
+    <string name="time">TIME</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.dialog_notification.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onAlert"
+        android:text="@string/String"
+        android:textSize="@dimen/dimen"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="68dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="onDate"
+        android:text="@string/string"
+        android:textSize="@dimen/dimen"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnTime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="115dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="103dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onTime"
+        android:text="@string/time"
+        android:textSize="@dimen/dimen"
+        app:layout_constraintBottom_toBottomOf="@+id/btnProgress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAlert"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onProgress"
+        android:text="@string/progress"
+        android:textSize="@dimen/dimen"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCustom"
+        app:layout_constraintRight_toRightOf="@+id/btnAlert"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnCustom" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onCustom"
+        android:text="@string/custom"
+        android:textSize="@dimen/dimen"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
